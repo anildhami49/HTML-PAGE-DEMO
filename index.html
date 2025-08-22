@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Date Application Form</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background: #f4f4f4;
+      color: #333;
+    }
+    form {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      max-width: 600px;
+      margin: auto;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    h1 { text-align: center; color: #c2185b; }
+    label { display: block; margin-top: 15px; font-weight: bold; }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    button {
+      margin-top: 20px;
+      background: #c2185b;
+      color: #fff;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover { background: #a31545; }
+  </style>
+</head>
+<body>
+
+<h1>Application for Permission to Date Me</h1>
+
+<form>
+  <label>Name:</label>
+  <input type="text" name="name" required>
+
+  <label>Email:</label>
+  <input type="email" name="email" required>
+
+  <label>Address:</label>
+  <input type="text" name="address" required>
+
+  <label>Phone Number:</label>
+  <input type="tel" name="phone" required>
+
+  <label>IQ:</label>
+  <input type="text" name="iq">
+
+  <label>Gender:</label>
+  <input type="radio" name="gender" value="Male"> Male
+  <input type="radio" name="gender" value="Female"> Female
+
+  <label>Date of Proposed Outing:</label>
+  <input type="date" name="date" required>
+
+  <label>Check all that apply:</label>
+  <input type="checkbox" name="check1"> I love pets <br>
+  <input type="checkbox" name="check2"> I work full-time <br>
+  <input type="checkbox" name="check3"> I have children <br>
+  <input type="checkbox" name="check4"> My parents are rich <br>
+  <input type="checkbox" name="check5"> Date at public location <br>
+  <input type="checkbox" name="check6"> Have fun without judging <br>
+
+  <label>Explain why you want to date me (min 50 words):</label>
+  <textarea required minlength="50"></textarea>
+
+  <button type="submit">Send Application</button>
+</form>
+
+</body>
+</html>
